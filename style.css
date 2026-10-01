@@ -1,0 +1,455 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #f1f3f6;
+
+    color: #222;
+
+}
+
+
+.contenedor {
+
+    width: 95%;
+
+    max-width: 1200px;
+
+    margin: 30px auto;
+
+}
+
+
+header {
+
+    background: #1f4e79;
+
+    color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+
+}
+
+
+header h1 {
+
+    margin: 0 0 8px 0;
+
+}
+
+
+.configuracion {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.configuracion h2 {
+
+    margin-top: 0;
+
+}
+
+
+.configuracion h3 {
+
+    margin-top: 25px;
+
+}
+
+
+.grupo {
+
+    margin-bottom: 18px;
+
+    flex: 1;
+
+}
+
+
+.grupo label {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+
+}
+
+
+.grupo input,
+.grupo select,
+select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    font-size: 16px;
+
+    border: 1px solid #bbb;
+
+    border-radius: 6px;
+
+}
+
+
+.grupo small {
+
+    display: block;
+
+    margin-top: 6px;
+
+    color: #666;
+
+}
+
+
+.fila {
+
+    display: flex;
+
+    gap: 20px;
+
+}
+
+
+button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    background: #1f4e79;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 7px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    background: #163a5c;
+
+}
+
+
+.ayuda {
+
+    margin-top: 25px;
+
+    background: #eef4fa;
+
+    border-left: 5px solid #1f4e79;
+
+    padding: 18px;
+
+    border-radius: 6px;
+
+}
+
+
+.ayuda h3 {
+
+    margin-top: 0;
+
+}
+
+
+.ayuda p {
+
+    margin: 7px 0;
+
+}
+
+
+.informacion {
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 20px;
+
+}
+
+
+.informacion div {
+
+    font-size: 17px;
+
+}
+
+
+.grafica {
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.grafica h2 {
+
+    margin-top: 0;
+
+}
+
+
+canvas {
+
+    width: 100%;
+
+    height: 650px;
+
+    border: 1px solid #ccc;
+
+    display: block;
+
+    background: white;
+
+}
+
+
+.leyenda {
+
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    margin-top: 15px;
+
+}
+
+
+.leyenda span {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+.leyenda i {
+
+    width: 25px;
+
+    height: 4px;
+
+    display: inline-block;
+
+}
+
+
+.campo {
+
+    background: #2774c6;
+
+}
+
+
+.curvas {
+
+    background: #168a45;
+
+}
+
+
+.particular {
+
+    background: #e67e22;
+
+    height: 6px !important;
+
+}
+
+
+.punto {
+
+    width: 12px !important;
+
+    height: 12px !important;
+
+    background: red;
+
+    border-radius: 50%;
+
+}
+
+
+.procedimiento {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.paso {
+
+    background: #f5f7fa;
+
+    border-left: 4px solid #1f4e79;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    border-radius: 5px;
+
+    font-size: 17px;
+
+}
+
+
+.resultado {
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    color: #1f4e79;
+
+}
+
+
+.advertencia {
+
+    background: #fff4d6;
+
+    border-left: 4px solid #e67e22;
+
+    padding: 15px;
+
+    margin-top: 10px;
+
+    border-radius: 5px;
+
+}
+
+
+.explicacion {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+}
+
+
+.respuesta-especial {
+
+    background: #eef7ee;
+
+    border-left: 5px solid #168a45;
+
+    padding: 18px;
+
+    margin-top: 15px;
+
+    border-radius: 6px;
+
+}
+
+
+.respuesta-especial h3 {
+
+    margin-top: 0;
+
+    color: #168a45;
+
+}
+
+
+.respuesta-especial .dato {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin: 10px 0;
+
+}
+
+
+@media (max-width: 700px) {
+
+    canvas {
+
+        height: 450px;
+
+    }
+
+
+    .fila {
+
+        flex-direction: column;
+
+        gap: 0;
+
+    }
+
+
+    .informacion {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+}
